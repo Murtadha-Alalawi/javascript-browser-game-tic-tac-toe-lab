@@ -77,7 +77,7 @@ function checkForWinner(){
     ){
         console.log("X is the winner")
         currentPlayer = null
-        messageEls = "X is the winner"
+        messageEls.textContent = "X is the winner"
     }
 
    else  if(board[0]=== "O" && board[1]=== "O" && board[2]=== "O" || 
@@ -90,7 +90,7 @@ function checkForWinner(){
     board[6]=== "O" && board[7]=== "O" && board[8]=== "O"){
             console.log("O is the winner")
             currentPlayer = null
-            messageEls = "O is the winner"
+            messageEls.textContent = "O is the winner"
         }
 
 }
